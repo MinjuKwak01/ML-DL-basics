@@ -1,3 +1,5 @@
+# Weight-Initialization
+
 초기에 데이터들을 zero-centering, normalize해주는 것이 좋다.
 처음 input을 normalization 해주면, sigmoid function에서 gradient kill(기울기 소실), gradient saturation(기울기 포화 : 제대로 전달되지 않음)문제가 안 일어나는 거 아닌가?
 → 맞다. 하지만 두 번째 레이어도 normalize 되어있을지 보장할 수 없다. 현대 100개 이상의 layer을 쌓기 때문에.. 
